@@ -5,7 +5,7 @@ SoX (https://sox.sourceforge.net/) compiled to WASM using Emscripten. Based off 
 This is a direct port of the SOX command line - to use it you add files to the virtual file system and call the module using virtual command-line args. Here's a simple example of converting RAW PCM data to a WAV file.
 
 ```html
-<script src="./sox.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/rameshvarun/sox-emscripten@0.1.0/build/sox.js"></script>
 <script>
 const module = {
     arguments: ["-r", "8000", "-L", "-e",
